@@ -6,5 +6,8 @@ st.write("""
 # Supermarket Grocery Sales
 Supermarket sales report analysis from 2014-2018.""")
 
-df = pd.read_csv("Supermart Grocery Sales - Retail Analytics Dataset.csv")
-st.datafram(df)
+df = pd.DataFrame(
+   np.random.randn(50, 20),
+   columns=('col %d' % i for i in range(20)))
+
+st.dataframe(df)  # Same as st.write(df)
